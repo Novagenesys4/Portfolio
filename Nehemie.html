@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio — Néhémie Kouassi</title>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="portfolio.css"/>
+    </head>
+    <body>
+        <!-- Custom cursor -->
+        <div id="cursor"></div>
+        <div id="cursor-ring"></div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-logo">~/Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero-grid"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-content">
+                <p class="hero-tag">// étudiant en informatique</p>
+                <h1 class="hero-name glitch" data-text="Néhémie Kouassi">Néhémie <span>Kouassi.</span></h1>
+                <p class="hero-sub">
+                    Je construis des applications robustes, des interfaces web soignées et des solutions
+                    logicielles créatives. Passionné par le code et les nouvelles technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-scroll">scroll pour explorer</div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="about-grid">
+                <div>
+                    <p class="section-label">// 01 — à propos</p>
+                    <h2 class="section-title">Qui<br/>suis-je ?</h2>
+                    <div class="about-text">
+                        <p>
+                            Je suis <strong>étudiant en Licence 2 de Génie Informatique</strong>, passionné par le développement logiciel,
+                            les algorithmes et la création d'expériences numériques mémorables.
+                        </p>
+                        <p>
+                            Mon parcours m'a amené à travailler sur des projets alliant <strong>backend robuste</strong>
+                            et <strong>interfaces modernes</strong>. J'aime comprendre les systèmes en profondeur et trouver
+                            des solutions élégantes.
+                        </p>
+                        <p>
+                            En dehors du code, je m'intéresse à l'open source, aux nouvelles architectures logicielles
+                            et à partager mes connaissances.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-num">BAC +2</div>
+                        <div class="stat-label">Années d'études</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">8+</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">4+</div>
+                        <div class="stat-label">Langages maîtrisés</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">∞</div>
+                        <div class="stat-label">Curiosité</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <p class="section-label">// 02 — compétences</p>
+            <h2 class="section-title">Ce que<br/>je maîtrise</h2>
+            <div class="skills-categories">
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">⚙️</div>
+                    <div class="skill-card-title">Langages</div>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">C / C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML / CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">🧰</div>
+                    <div class="skill-card-title">Frameworks & Outils</div>
+                    <div class="skill-tags">
+                        <span class="tag">Java EE</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Maven</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">🗄️</div>
+                    <div class="skill-card-title">Bases de données</div>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">JPA / Hibernate</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">🖥️</div>
+                    <div class="skill-card-title">Environnement</div>
+                    <div class="skill-tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows</span>
+                        <span class="tag">IntelliJ</span>
+                        <span class="tag">Eclipse</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Tomcat</span>
+                        <span class="tag">WildFly</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">🌐</div>
+                    <div class="skill-card-title">Réseaux</div>
+                    <div class="skill-tags">
+                        <span class="tag">TCP / IP</span>
+                        <span class="tag">HTTP / HTTPS</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">Modèle OSI</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">Packet Tracer</span>
+                        <span class="tag">Firewall</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <p class="section-label">// 03 — projets</p>
+            <h2 class="section-title">Mes<br/>réalisations</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-corner"></div>
+                    <div class="project-num">PROJECT — 001</div>
+                    <h3 class="project-title">Générateur de Codes-barres</h3>
+                    <p class="project-desc">
+                        Application web Java EE permettant de générer des DataMatrix et autres 
+                        codes-barres à partir d'un formulaire. Intégration de la librairie barcode4j.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java EE</span><span>Servlet</span><span>JSP</span><span>barcode4j</span><span>Tomcat</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-corner"></div>
+                    <div class="project-num">PROJECT — 002</div>
+                    <h3 class="project-title">Application de Gestion</h3>
+                    <p class="project-desc">
+                        Système de gestion avec authentification, CRUD complet et interface 
+                        responsive. Architecture MVC avec persistance JPA.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span><span>JPA</span><span>MySQL</span><span>Maven</span><span>WildFly</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-corner"></div>
+                    <div class="project-num">PROJECT — 003</div>
+                    <h3 class="project-title">Portfolio Web</h3>
+                    <p class="project-desc">
+                        Ce portfolio interactif avec animations CSS, cursor personnalisé et scroll reveal. 
+                        Développé en HTML/CSS/JS pur, sans dépendances.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <p class="section-label" style="text-align:center">// 04 — contact</p>
+            <h2 class="section-title" style="text-align:center">Parlons<br/>ensemble.</h2>
+            <p class="contact-line">
+                Disponible pour des stages, projets collaboratifs 
+                ou simplement pour échanger. N'hésitez pas à m'écrire.
+            </p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Nom</label>
+                        <input class="form-input" type="text" placeholder="Jean Dupont" required/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input class="form-input" type="email" placeholder="jean@exemple.com" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Sujet</label>
+                    <input class="form-input" type="text" placeholder="Stage, collaboration, question..."/>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-textarea" placeholder="Votre message..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit" id="submit-btn">Envoyer le message</button>
+            </form>
+            <div class="contact-socials reveal">
+                <a href="https://github.com/Novagenesys4" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter / X</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 — Néhémie Kouassi. Tous droits réservés.</p>
+            <p>Conçu & développé avec ❤️</p>
+        </footer>
+
+        <script src="portfolio.js"></script>
+    </body>
+</html>

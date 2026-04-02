@@ -4,12 +4,23 @@
   --bg: #0a0a0f;
   --surface: #12121a;
   --border: #1f1f2e;
-  --accent: #00aeff;
+  --accent: #00b3ff;
   --accent2: #fb911f;
   --text: #e8e8f0;
   --muted: #5a5a70;
   --font-display: 'Syne', sans-serif;
   --font-mono: 'DM Mono', monospace;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+  --bg: #f8f9fc;
+  --surface: #ffffff;
+  --border: #d1d5e0;
+  --accent: #00b3ff;
+  --accent2: #f57c00;
+  --text: #1a1a2e;
+  --muted: #555577;
 }
 
 html { scroll-behavior: smooth; }
@@ -501,4 +512,91 @@ footer p {
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .form-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+/* ==================== HAMBURGER MENU ==================== */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: none;
+    padding: 8px;
+}
+
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    transition: all 0.3s;
+}
+
+#hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+#hamburger.active span:nth-child(2) { opacity: 0; }
+#hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+/* Overlay mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile-menu a {
+    font-size: 1.1rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Theme toggle */
+.theme-btn {
+    background: none;
+    border: 1px solid var(--border);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.theme-btn:hover {
+    border-color: var(--accent);
+}
+
+/* Masquer l'un ou l'autre icône selon le thème */
+[data-theme="light"] .moon { display: none; }
+[data-theme="dark"] .sun { display: none; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .mobile-menu {
+        display: flex;
+    }
 }

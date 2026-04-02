@@ -15,12 +15,24 @@
         <!-- Navigation -->
         <nav>
             <div class="nav-logo">~/Portfolio</div>
-            <ul class="nav-links">
+            
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <!-- Theme toggle + Hamburger -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Changer de thème">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <button id="hamburger" class="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
         
         <!-- Hero -->
@@ -245,9 +257,15 @@
             </div>
         </section>
 
+        <!-- Compteur de visites (GitHub) -->
         <footer>
             <p>© 2026 — Néhémie Kouassi. Tous droits réservés.</p>
-            <p>Conçu & développé avec ❤️</p>
+            <p>
+                Conçu & développé avec ❤️ 
+                <span style="margin-left: 15px; font-size: 0.75rem; opacity: 0.7;">
+                    👀 <img src="https://komarev.com/ghpvc/?username=Novagenesys4&label=Visites&color=7fff6e&style=flat" alt="Visites du portfolio" style="vertical-align: middle; height: 18px;">
+                </span>
+            </p>
         </footer>
 
         <script src="portfolio.js"></script>
